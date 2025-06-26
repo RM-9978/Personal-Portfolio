@@ -1,0 +1,25 @@
+body {
+    background-color: #0b0912;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #000000;
+    height: 70px;
+}
+
+/*logo*/
+#logo img {
+    width: 70px;
+    height: auto;
+    margin-left: 15px;
+}
+
+/*navigation bar*/
+nav ul li {
+    color: white;
+}
