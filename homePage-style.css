@@ -32,25 +32,41 @@ header {
 
 #logo {
     display: flex;
-    align-content: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    padding: 10px
 }
 
-#logo img {
-    width: 70px;
-    height: auto;
-    margin-left: 20px;
-    z-index: 1;
+a {
+    text-decoration: none;
 }
+
+
+#logo h2 {
+    font-family: 'Blanka';
+    color: #408eed;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-shadow: 0 0 20px rgb(162, 218, 255);
+    position: relative;
+    bottom: 5px;
+}
+
+#logo h2:hover {
+    text-shadow: 0 0 26px rgb(162, 218, 255);
+}
+
 
  #home-text {
     color: white;
-    font-family: 'Josefin Sans';   
-    text-decoration: none;     
-    position: relative;
-    top: 13px;                      
+    font-family: 'Josefin Sans';                         
 }
 
+#home-text:hover {
+    text-shadow: 0px 0px 35px rgb(252, 252, 252), 0px 0px 35px rgb(95, 149, 244), 0px 0px 25px white;
+}
 
 /*navigation bar*/
 
@@ -68,6 +84,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover{
+    text-shadow: 0px 0px 35px rgb(252, 252, 252), 0px 0px 35px rgb(95, 149, 244), 0px 0px 25px white;
+}
+
 /*intro-text*/
 
 #intro-text{
@@ -82,8 +102,9 @@ nav ul li a {
 }
 
 #intro-text h1 {
-    font-family: 'Blanka';
+    font-family: 'Josefin Sans';
     line-height: 80px;
+    font-size: 40px;
 }
 
 #intro-text #description {
@@ -93,13 +114,8 @@ nav ul li a {
 }
 
 /*link-buttons*/
-.outer-buttons {
-    width: 200px;
-    height: 70px;
-    background-color: #8b3dff;
-    border-radius: 8px;
-    text-align: center;
-}
+
+
 
 button {
     color: white;
@@ -110,7 +126,23 @@ button {
     height: 55px;
     border-radius: 8px;
     border-style: solid;
+    text-align: center;
     border-color: transparent;
+    position: relative;
+    z-index: 5;
+}
+
+
+.outer-buttons {
+    width: 200px;
+    height: 70px;
+    background-image: linear-gradient(40deg, #3dabfa, #8e40ed, #b940ed);
+    border-radius: 8px;
+    text-align: center;
+}
+
+button:hover {
+    box-shadow: 0 0 20px rgb(35, 174, 249), 0 0 35px rgb(183, 28, 222), 0 0 50px rgb(126, 157, 237); 
 }
 
 #contact-button {
