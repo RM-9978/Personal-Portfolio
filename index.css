@@ -46,7 +46,8 @@ a {
 
 #logo h2 {
     font-family: 'Blanka';
-    color: #408eed;
+    /*color: #408eed;*/
+    color: red;
     letter-spacing: 5px;
     font-size: 30px;
     text-shadow: 0 0 20px rgb(162, 218, 255);
