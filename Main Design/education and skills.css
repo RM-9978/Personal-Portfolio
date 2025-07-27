@@ -1,0 +1,235 @@
+* {
+    color: white;
+    font-family: "Bebas Neue";
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;    
+    align-content: center;
+}
+
+#main {
+    height: 92vh;
+    width: 210vh;
+    background-color: black;
+    box-sizing: border-box;
+    margin: auto;
+    box-shadow: inset 0 1px 10px 4px lab(51.74% -11.96 -32.85);
+    overflow: auto;
+}
+
+#main::-webkit-scrollbar {
+        display: none;
+    }
+
+
+/*header*/
+header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 10px 5px lab(29.14% 1.26 0.45 / 0.5);
+    width: 94%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+header ul a {
+    text-decoration: none;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+    color: rgb(94, 185, 231);
+    cursor: pointer;
+}
+
+#logo-text {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.5rem;
+    margin-left: 9px;
+    padding-left: 17px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px #0af, 0 0 10px #0af;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.3); /* subtle edge */
+    height: 100%;
+    /*line-height: 1.6em;*/
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*from AI*/
+#logo-text:hover {
+  text-shadow:
+    0 0 5px #1e74f5,
+    0 0 10px #1e74f5,
+    0 0 15px #1e74f5;
+  transition: text-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+#side-nav {
+    width: 14%;
+    height: 65vh;
+    margin-left: 3%;
+    margin-top: 2.8em;
+    box-shadow: 0 0 10px 5px lab(29.14% 1.26 0.45 / 0.5);
+    overflow: auto;
+    position: fixed;
+}
+
+#side-nav a {
+    padding-left: 0.7em;
+}
+
+a.in-subclass {
+    color: white;
+    font-size: 1em;
+    margin-left: 0.7em;
+}
+
+a.subclass {
+    color:rgb(94, 185, 231);
+    padding-top: 1em; 
+    padding-left: 0.7em;
+    display: inline-block;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#side-nav a:hover {
+    text-decoration-line: underline;
+}
+
+#side-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+/*grids*/
+#main-content {
+    width: 75%;
+    margin-left: 16em;
+    position: relative;
+    top: 3em;
+    height: auto;
+}
+
+.header {
+    color:rgb(94, 185, 231);
+    font-size: 2em;
+    font-family: 'Michroma';
+}
+
+.sub-header {
+    color:rgb(238, 249, 255);
+    font-size: 1.6em;
+    font-family: 'Michroma';
+}
+
+.edu-grid{
+    color: rgb(255, 196, 0);
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.edu-card {
+    border: .5px solid rgb(154, 154, 255);
+    height: 320px;   
+    box-shadow: 0 0 15px rgb(18, 56, 114); /* light neon glow */
+    background: linear-gradient(to bottom, #0a0a0a, #070710);
+}
+.edu-card:hover {
+    box-shadow: 0 0 15px rgb(18, 84, 227); /* light neon glow */
+}
+
+.edu-card h5 {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Michroma";
+    color: rgb(94, 185, 231);
+}
+
+.header-line {
+    background-color: rgb(94, 185, 231);
+    width: 90%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgb(18, 84, 227);
+    margin-bottom: 5px;
+}
+
+.dividing-line{
+    background-color: rgb(94, 185, 231);
+    height: 90%;
+    width: 3px;
+    margin-right: 1.2em;
+    margin-left: 1em;
+    box-shadow: 0 0 15px rgb(18, 84, 227);
+}
+
+.edu-content{
+    display: flex;
+    height: 80%;
+    justify-content: center;
+}
+
+.left-side {
+    margin-left: 1em;
+    margin-right: auto;
+}
+
+.accomplishments {
+    text-align: center;
+    margin-right: 1.7em;
+}
+
+.catagory {
+    color:rgb(94, 185, 231);
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+.edu-card p {
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+.accomp-text {
+    font-size: 10px;
+    margin-right: 1.7em;
+}
+
+.accomp-text li {
+    font-family: "Poppins"
+}
+

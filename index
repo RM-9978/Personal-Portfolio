@@ -1,0 +1,25 @@
+
+const textElement = document.querySelector('h1');
+
+const random = () => {
+  const randomNum = Math.floor(Math.random() * 5) + 1;
+  return randomNum;
+};
+
+const decideColor = (chosenElement) => {
+  if (chosenElement === 1) {
+    textElement.style.color = '#e159ff';
+  } else if (chosenElement === 2) {
+    textElement.style.color = '#c259ff';
+  } else if (chosenElement === 3) {
+    textElement.style.color = '#a159ff';
+  } else if (chosenElement === 4) {
+    textElement.style.color = '#5f59ff';
+  } else if (chosenElement === 5) {
+    textElement.style.color = '#59b2ff';
+  }
+};
+
+textElement.addEventListener('mouseover', () => {
+  decideColor(random());
+});

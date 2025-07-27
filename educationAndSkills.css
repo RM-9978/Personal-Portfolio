@@ -1,0 +1,246 @@
+body {
+    background-image: url('li-bg.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin: 0px;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 70px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 96%;
+    box-shadow: 0px 8px 24px rgba(149, 149, 149, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    margin-top: 15px;
+    position: fixed;
+    z-index: 1;
+}
+
+header:hover {
+    background-color: black;
+}
+
+/*logo*/
+
+#logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    padding: 10px
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#logo h2 {
+    font-family: 'Blanka';
+    color: #408eed;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-shadow: 0 0 20px rgb(162, 218, 255);
+    position: relative;
+    bottom: 5px;
+}
+
+#logo h2:hover {
+    text-shadow: 0 0 26px rgb(162, 218, 255);
+}
+
+
+ #home-text {
+    color: white;
+    font-family: 'Josefin Sans';                         
+}
+
+#home-text:hover {
+    text-shadow: 0px 0px 35px rgb(252, 252, 252), 0px 0px 35px rgb(95, 149, 244), 0px 0px 25px white;
+}
+
+/*navigation bar*/
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-family: 'Josefin Sans'; 
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-shadow: 0px 0px 35px rgb(252, 252, 252), 0px 0px 35px rgb(95, 149, 244), 0px 0px 25px white;
+}
+
+/*mini-header*/
+
+#mini-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 35%;
+    height: 60px;
+    box-shadow: 0px 8px 24px rgba(149, 149, 149, 0.2);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+#mini-header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 40%;
+}
+
+#mini-header ul a {
+    font-family: 'Josefin Sans';
+    color: white;
+}
+
+#mini-header ul a:hover {
+    text-shadow: 0px 0px 25px rgb(252, 252, 252), 0px 0px 25px rgb(95, 149, 244), 0px 0px 15px white;
+}
+
+/*education*/
+#edu-text {
+    color: white;
+    font-family: 'Josefin Sans';
+    font-size: 35px;
+    margin: 30px;
+}
+
+#education {
+    margin: 30px;
+}
+
+#education .edu-box {
+    border: 4px rgb(173, 218, 255) solid;
+    width: 339px;
+    height: 230px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px rgb(35, 174, 249), 0 0 35px rgb(75, 105, 255), 0 0 40px rgb(126, 157, 237);  
+}
+
+#education {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 45px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+}
+
+#move-edu {
+    position: relative;
+    top: 130px;
+}
+
+.edu-box-text {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-family: 'Josefin Sans';
+}
+
+.edu-box-text h4 {
+    font-size: 20px;
+}
+
+/*skills*/
+
+#skills-move {
+    color: white;
+    position: relative;
+    top: 300px;
+}
+
+#skills-text {
+    font-family: 'Josefin Sans';
+    font-size: 35px;
+    margin: 30px;
+}
+
+.skills-subtitles {
+    font-family: 'Josefin Sans';
+    font-size: 25px;
+    margin: 30px;
+}
+
+.skills-box {
+    border: 3px solid white;
+    width: 60%;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    box-shadow: inset 0 0 25px rgb(119, 27, 248), 0 0 35px rgb(103, 37, 196), 0 0 30px rgb(194, 13, 249);
+}
+
+#skills {
+    display: block;
+    font-family: 'Josefin Sans';
+}
+
+.measure-box {
+    border: solid 1px rgb(255, 255, 255);
+    width: 87%;
+    margin-left: 7.5%;
+    height: 20px;
+    border-radius: 7px;
+}
+
+.internal-box {
+    background-color: rgb(173, 55, 223);
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: inset 0 0 10px rgb(119, 27, 248), 0 0 15px rgb(103, 37, 196), 0 0 15px rgb(194, 13, 249);
+}
+
+.internal-box:hover {
+    box-shadow: inset 0 0 25px rgb(119, 27, 248), 0 0 35px rgb(103, 37, 196), 0 0 27px rgb(194, 13, 249);
+}
+
+#htmlcss-internal-box {
+    width: 45%;
+}
+
+#js-internal-box {
+    width: 40%;
+}
+
+#bash-internal-box {
+    width: 20px;
+}
+
+.skills-box h2 {
+    margin-left: 3%;
+}
+
+
+#kl-internal-box {
+    width: 9%;
+}
