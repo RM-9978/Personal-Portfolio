@@ -147,8 +147,10 @@ a.subclass {
 
 .sub-header {
     color:rgb(238, 249, 255);
-    font-size: 1.6em;
+    font-size: 1.34em;
     font-family: 'Michroma';
+    margin-top: 30px;
+    margin-left: 12px;
 }
 
 .edu-grid{
@@ -162,8 +164,8 @@ a.subclass {
 .edu-card {
     border: .5px solid rgb(154, 154, 255);
     height: 320px;   
-    box-shadow: 0 0 15px rgb(18, 56, 114); /* light neon glow */
-    background: linear-gradient(to bottom, #0a0a0a, #070710);
+    box-shadow: 0 0 15px rgb(18, 56, 114);
+    background: linear-gradient(to bottom, #0a0a0a, #090915);
 }
 .edu-card:hover {
     box-shadow: 0 0 15px rgb(18, 84, 227); /* light neon glow */
@@ -171,7 +173,7 @@ a.subclass {
 
 .edu-card h5 {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.15em;
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: "Michroma";
@@ -233,3 +235,104 @@ a.subclass {
     font-family: "Poppins"
 }
 
+/*skills section*/
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    
+}
+
+
+.skill-section {
+    border: .5px solid rgb(184, 154, 255);
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(to bottom, #0a0a0a, #0c0c20);
+    box-shadow: 0 0 15px rgb(32, 18, 114);
+}
+
+.skill-section:hover {
+    box-shadow: 0 0 15px rgb(78, 36, 205); /* light neon glow */
+}
+
+.skill-section h3 {
+    font-family: "Michroma";
+    font-size: 1.15em;
+    margin-left: 1.7em;
+}
+
+.progress-container {
+    border: solid rgb(217, 217, 255) 1px;
+    width: 90%;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-container:hover {
+    box-shadow: 0 0 15px rgb(78, 36, 205);
+}
+
+
+.progress-bar {
+    height: 100%;
+    /*border: 1px solid rgb(144, 197, 255);*/
+    background-image: linear-gradient(90deg, darkblue, rgb(37, 0, 139), rgb(60, 0, 139));
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(44, 26, 141);
+}
+
+.progress-bar:hover {
+    box-shadow: 0 0 15px rgb(78, 36, 205);
+}
+
+.ranks {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.ranks ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tools {
+    margin-top: 2em;
+}
+
+#htmlcss-progress {
+    width: 45%;
+}
+
+#js-progress {
+    width: 40%;
+}
+
+#bash-progress {
+    width: 12%;
+}
+
+#kali-linux-progress {
+    width: 15%;
+}
+
+#git-progress {
+    width: 10%;
+}
+
+#github-progress {
+    width: 20%;
+}
+
+#vscode-progress {
+    width: 25%;
+}
+
+#slight-space {
+    height: 30px;
+}
