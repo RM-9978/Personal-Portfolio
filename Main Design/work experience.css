@@ -111,7 +111,7 @@ header ul a:hover {
 }
 
 #resume-box a:hover {
-    color:#0af;
+    color:rgb(114, 224, 243);;
     text-decoration: underline;
 }
 
@@ -129,16 +129,6 @@ header ul a:hover {
     padding-left: 110px;
 }
 
-.work-box {
-    height: 240px;
-    width: 260px;
-    background: linear-gradient(to bottom, #0a0a0a, #070710);
-    color: white;
-    position: relative;
-    z-index: 1;
-    border: 1px solid green;
-    padding: 15px;
-}
 
 .work-box::after {
     content: "";
@@ -146,9 +136,11 @@ header ul a:hover {
     top: 50%;
     right: -75px; /* Distance between boxes / 2 - tweak if needed */
     width: 75px;
-    height: 2px;
-    background-color: white;
+    height: 4px;
+    background-color: rgb(114, 238, 243);
     z-index: 0;
+    box-shadow: 0 0 15px rgb(18, 76, 114);
+    filter: drop-shadow(0 0 4px  rgb(74, 185, 189));
 }
 
 .work-box.no-after::after {
@@ -162,9 +154,10 @@ header ul a:hover {
   top: 100%; /* Just below Box 3 */
   transform: translateX(-50%);
   height: 60px; /* Same as column-wrap gap */
-  width: 2px;
-  background-color: #0af;
+  width: 4px;
+  background-color: rgb(114, 238, 243);
   z-index: 0;
+  filter: drop-shadow(0 0 4px  rgb(74, 185, 189));
 }
 
 .column-wrap {
@@ -172,4 +165,68 @@ header ul a:hover {
   flex-direction: column;
   align-items: center;
   gap: 60px; /* spacing between Box 3 and 4 */
+}
+
+/*internal*/
+
+.work-box {
+    height: 350px;
+    width: 280px;
+    background: linear-gradient(to bottom, #0a0a0a, #14142e);
+    color: white;
+    position: relative;
+    z-index: 5;
+    border: 1px solid rgb(114, 238, 243);
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(18, 76, 114);
+}
+
+.work-box:hover{
+    box-shadow: 0 0 15px rgb(18, 147, 227);
+}
+
+.side{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.3em;
+    height: 37%;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.work-box p {
+    font-family: "Poppins";
+    font-size: 0.7em;
+}
+
+.header {
+    font-family: "Poppins";
+    font-size: 0.73;
+    color:rgb(57, 219, 255);
+}
+
+.work-box h3 {
+    font-family: "Michroma";
+    color:rgb(57, 219, 255);
+    text-decoration: underline;
+}
+
+.divide {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    background-color: rgb(57, 219, 255);
+    width: 70%;
+}
+
+.description {
+    max-height: 150px;
+}
+
+.des-header {
+    font-size: 1.5em;
+    font-family: "Michroma";
+    text-decoration: underline;
 }
